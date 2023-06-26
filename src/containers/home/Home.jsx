@@ -10,6 +10,7 @@ import "./home.style.css";
 const Home = () => {
   return (
     <div className="home">
+      <div className="home__right"></div>
       <NavBar />
       <div className="home__page">
         <div className="home__container">
@@ -48,7 +49,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <img src={me} className="home__photo" alt="author" />
       </div>
       <div></div>
     </div>
