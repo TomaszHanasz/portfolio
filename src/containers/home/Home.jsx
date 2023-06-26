@@ -3,7 +3,6 @@ import NavBar from "../../components/navBar/NavBar";
 import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import me from "./../../images/image-62.png";
 import { Link } from "react-router-dom";
 import "./home.style.css";
 
