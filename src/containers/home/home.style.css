@@ -1,8 +1,12 @@
 .home {
-  height: 100vh;
-  background-color: #2C343F;
-  color: white;
-  line-height: 3rem;
+  height: fit-content;
+}
+
+.home__page {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
 .home__container {
@@ -10,20 +14,58 @@
   flex-direction: column;
   justify-content: center;
   gap: 75px;
-  margin: 5% 10%;
-  width: 35%;
+  margin-left: 12%;
+  width: 35vw;
+  flex-basis: 33%;
+  height: 80vh;
 }
 
-.home h1 {
-    font-size: 3rem;
-    line-height: 4rem;
-    font-weight: 300;
+.home__welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
-.home p {
-    font-size: 1.5rem;
+.home__photo {
+  width: 50%;
+  height: 80vh;
+  object-fit: cover;
+  flex-basis: 50%;
+  margin-right: 5%;
+  border-radius: 50px;
+  object-position: bottom;
 }
 
-.home__container span {
-    color: #FD8585;
+.home__icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.home__link,
+.home__link:hover,
+.home__link:focus,
+.home__link:active {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .home__page {
+    flex-direction: column-reverse;
+    margin-top: 40px;
+  }
+
+  .home__container {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home__photo {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 90%;
+  }
 }

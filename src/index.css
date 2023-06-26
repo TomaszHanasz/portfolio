@@ -9,3 +9,38 @@
 html {
   font-family: "Merriweather", sans-serif;
 }
+
+body {
+  line-height: 3rem;
+  color: white;
+  background-color: #2c343f;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.5rem;
+  text-wrap: balance;
+}
+
+span {
+  color: #fd8585;
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    line-height: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
