@@ -24,7 +24,11 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static" style={{ backgroundColor: "#2C343F" }}>
+    <AppBar
+      elevation={0}
+      position="static"
+      style={{ backgroundColor: "#2C343F" }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img src={logo} style={{ width: 40 }} alt="logo" />
@@ -34,6 +38,7 @@ function NavBar() {
               display: {
                 xs: "flex",
                 md: "none",
+                justifyContent: "flex-end",
               },
             }}
           >
@@ -99,7 +104,14 @@ function NavBar() {
               </Link>
             </Menu>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "center",
+              gap: 10,
+            }}
+          >
             <Link to="/" style={{ textDecoration: "none" }}>
               <Button sx={{ my: 2, color: "white", display: "block" }}>
                 Home

@@ -32,7 +32,7 @@ const Home = () => {
                   color: "#2c343f",
                 }}
               >
-                Email me
+                Contact
               </Button>
             </Link>
             <div className="home__icons">
