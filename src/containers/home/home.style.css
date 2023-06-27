@@ -60,7 +60,7 @@
 @media screen and (max-width: 750px) {
   .home__page {
     flex-direction: column-reverse;
-    margin: 40px auto;
+    margin: 10px auto;
   }
 
   .home__container {
