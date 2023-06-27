@@ -31,7 +31,7 @@ function NavBar() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <img src={logo} style={{ width: 40 }} alt="logo" />
+          <img src={logo} style={{ width: 60 }} alt="logo" />
           <Box
             sx={{
               flexGrow: 1,
