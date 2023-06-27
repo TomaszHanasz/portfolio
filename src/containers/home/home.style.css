@@ -37,6 +37,13 @@
   gap: 50px;
 }
 
+.home__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 .home__icons {
   display: flex;
   flex-direction: row;
@@ -66,14 +73,20 @@
   .home__container {
     width: 100%;
     margin: 0 auto;
+    margin-top: 200px;
     align-items: center;
     text-align: center;
+  }
+
+  .home__buttons {
+    flex-direction: column;
+    justify-content: center;
   }
 
   .home__right {
     height: 30%;
     width: 100%;
-    bottom: 0;
+    top: 0;
   }
 
   .home__icons {

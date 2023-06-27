@@ -22,19 +22,34 @@ const Home = () => {
               I am web developer who loves to craft attractive design
               experiences for the web.
             </p>
-            <Link to={"/contact"}>
-              <Button
-                variant="contained"
-                style={{
-                  width: 256,
-                  height: 64,
-                  backgroundColor: "#FD8585",
-                  color: "#2c343f",
-                }}
-              >
-                Contact
-              </Button>
-            </Link>
+            <div className="home__buttons">
+              <Link to={"/contact"}>
+                <Button
+                  variant="contained"
+                  style={{
+                    width: 256,
+                    height: 64,
+                    backgroundColor: "#FD8585",
+                    color: "#2c343f",
+                  }}
+                >
+                  Contact
+                </Button>
+              </Link>
+              <Link to={"/projects"}>
+                <Button
+                  variant="contained"
+                  style={{
+                    width: 256,
+                    height: 64,
+                    backgroundColor: "#FD8585",
+                    color: "#2c343f",
+                  }}
+                >
+                  My Projects
+                </Button>
+              </Link>
+            </div>
             <div className="home__icons">
               <a href="https://github.com/TomaszHanasz/" className="home__link">
                 <GitHubIcon sx={{ width: 50, height: 50 }} />
