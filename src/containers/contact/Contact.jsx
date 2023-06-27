@@ -113,15 +113,8 @@ const Contact = () => {
           <Button
             type="submit"
             sx={{
-              marginBottom: "25px",
-              fontSize: "1rem",
-              width: {
-                xs: "300px",
-                sm: "250px",
-                md: "300px",
-                lr: "400px",
-                xl: "500px",
-              },
+              width: 256,
+              height: 64,
               backgroundColor: "#FD8585",
               color: "#2c343f",
               "&:hover": {
