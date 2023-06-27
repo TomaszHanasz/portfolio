@@ -10,16 +10,16 @@ const Contact = () => {
     setMessage({ ...message, [e.target.name]: e.target.value });
   };
 
-  const onSubmitHandler = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <div>
       <NavBar />
       <div className="contact">
         <h1 style={{ textAlign: "center", marginBottom: 50 }}>Contact me</h1>
-        <form className="contact__form" onSubmit={onSubmitHandler}>
+        <form
+          className="contact__form"
+          action="https://formsubmit.co/tomaszhanasz@yahoo.pl"
+          method="POST"
+        >
           <div className="contact__name">
             <label htmlFor="name">Name:</label>
             <input name="name" type="text" onChange={onChangeHandler} />
