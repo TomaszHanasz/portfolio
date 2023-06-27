@@ -44,7 +44,6 @@ const Contact = () => {
             label="Name"
             color="primary"
             focused
-            placeholder="John"
             onChange={onChangeHandler}
             value={sendedMessage.name}
           />
@@ -65,7 +64,6 @@ const Contact = () => {
             label="Last Name"
             color="primary"
             focused
-            placeholder="Smith"
             onChange={onChangeHandler}
             value={sendedMessage.lastName}
           />
@@ -88,7 +86,6 @@ const Contact = () => {
             color="primary"
             focused
             required
-            placeholder="john123@gmail.com"
             onChange={onChangeHandler}
             value={sendedMessage.email}
           />
@@ -108,7 +105,6 @@ const Contact = () => {
             name="message"
             fullWidth
             label="Type your Message"
-            placeholder="I have a guestion, example: ..."
             color="primary"
             focused
             onChange={onChangeHandler}
