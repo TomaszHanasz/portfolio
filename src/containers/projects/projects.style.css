@@ -4,4 +4,22 @@
   width: 60%;
   margin: 0 auto;
   margin-top: 40px;
+  gap: 20px;
+}
+
+.projects__card {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .projects__container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .projects__container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+  }
 }
