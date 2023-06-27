@@ -49,6 +49,12 @@
   gap: 20px;
 }
 
+.home__proficiency {
+  display: flex;
+  gap: 20px;
+  margin-top: -30px;
+}
+
 .home__link,
 .home__link:hover,
 .home__link:focus,
@@ -85,5 +91,9 @@
   .home__icons {
     justify-content: center;
     gap: 20px;
+  }
+
+  .home__proficiency {
+    justify-content: center;
   }
 }

@@ -3,8 +3,12 @@ import NavBar from "../../components/navBar/NavBar";
 import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import HtmlIcon from "@mui/icons-material/Html";
+import CssIcon from "@mui/icons-material/Css";
+import JavascriptIcon from "@mui/icons-material/Javascript";
 import { Link } from "react-router-dom";
 import "./home.style.css";
+import { Css } from "@mui/icons-material";
 
 const Home = () => {
   return (
@@ -60,6 +64,11 @@ const Home = () => {
               >
                 <LinkedInIcon sx={{ width: 50, height: 50 }} />
               </a>
+            </div>
+            <div className="home__proficiency">
+              <HtmlIcon sx={{ width: 50, height: 50 }} />
+              <CssIcon sx={{ width: 50, height: 50 }} />
+              <JavascriptIcon sx={{ width: 50, height: 50 }} />
             </div>
           </div>
         </div>
