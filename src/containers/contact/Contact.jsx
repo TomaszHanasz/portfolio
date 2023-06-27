@@ -128,6 +128,10 @@ const Contact = () => {
               },
               backgroundColor: "#FD8585",
               color: "#2c343f",
+              "&:hover": {
+                backgroundColor: "2c343f",
+                color: "#FD8585",
+              },
             }}
             variant="contained"
           >

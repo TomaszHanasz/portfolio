@@ -22,6 +22,11 @@
   border-width: 2px !important;
 }
 
+.css-o3x92v-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: #2c343f !important;
+  color: white !important;
+}
+
 .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
   color: #2c343f !important;
 }
