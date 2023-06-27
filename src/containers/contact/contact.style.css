@@ -1,76 +1,47 @@
-.contact {
-  width: 80%;
-  margin: 100px auto;
-}
-
-.contact__form {
-  display: grid;
+.request-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: 100px 200px 100px;
-  width: 60%;
-  margin: 0 auto;
+  height: 80vh;
 }
 
-.contact__name {
+.request-form {
   display: flex;
   flex-direction: column;
-  flex-basis: 50%;
-  grid-column: 1 / 7;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 600px;
+  height: 600px;
+  background-color: #dfdfe9;
+  border-radius: 8px;
 }
 
-.contact__email {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 50%;
-  grid-column: 8 / 14;
+.MuiOutlinedInput-notchedOutline {
+  border-color: #2c343f !important;
+  border-width: 2px !important;
 }
 
-.contact__large-input {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  grid-row: 2/3;
-  grid-column: 1/14;
-  margin-top: 50px;
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #2c343f !important;
 }
 
-.contact__large-input textarea {
-  padding: 10px;
+.request-text {
+  display: inline-block;
+  width: 500px;
+  height: 60px;
+  font-size: 4rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
 }
 
-.contact__name input,
-.contact__email input {
-  height: 3rem;
-  padding: 10px;
-}
-
-.contact__btn {
-  grid-row: 3/4;
-  grid-column: 6/9;
-}
-
-@media screen and (max-width: 1200px) {
-  .contact {
-    width: 90%;
+@media screen and (max-width: 767px) {
+  .request-app {
+    width: 350px;
   }
-}
-
-@media screen and (max-width: 900px) {
-  .contact {
-    width: 100%;
-  }
-
-  .contact__form {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    justify-content: center;
-  }
-
-  .contact__name,
-  .contact__email {
-    flex-basis: 100%;
-    margin-top: 10px;
+  .request-text {
+    width: 400px;
+    font-size: 3rem;
   }
 }

@@ -1,53 +1,135 @@
 import React, { useState } from "react";
 import NavBar from "../../components/navBar/NavBar";
+import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 import "./contact.style.css";
 
 const Contact = () => {
-  const [message, setMessage] = useState({});
+  const [sendedMessage, setSendedMessage] = useState({});
 
   const onChangeHandler = (e) => {
-    setMessage({ ...message, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setSendedMessage((prevMessage) => ({
+      ...prevMessage,
+      [name]: value,
+    }));
   };
 
   return (
     <div>
       <NavBar />
-      <div className="contact">
-        <h1 style={{ textAlign: "center", marginBottom: 50 }}>Contact me</h1>
+      <div className="request-container" id="contact">
         <form
-          className="contact__form"
           action="https://formsubmit.co/tomaszhanasz@yahoo.pl"
+          className="request-form"
           method="POST"
         >
-          <div className="contact__name">
-            <label htmlFor="name">Name:</label>
-            <input name="name" type="text" onChange={onChangeHandler} />
-          </div>
-          <div className="contact__email">
-            <label>Email:</label>
-            <input name="email" type="email" onChange={onChangeHandler} />
-          </div>
-          <div className="contact__large-input">
-            <label>Message:</label>
-            <textarea
-              name="message"
-              type="text"
-              rows="10"
-              onChange={onChangeHandler}
-            />
-          </div>
+          <h1 className="request-text" style={{ color: "#2c343f" }}>
+            Contact Me
+          </h1>
+          <TextField
+            sx={{
+              width: {
+                xs: "300px",
+                sm: "250px",
+                md: "300px",
+                lr: "400px",
+                xl: "500px",
+              },
+              input: {
+                color: "#2c343f",
+              },
+            }}
+            name="name"
+            label="Name"
+            color="primary"
+            focused
+            placeholder="John"
+            onChange={onChangeHandler}
+            value={sendedMessage.name}
+          />
+          <TextField
+            sx={{
+              width: {
+                xs: "300px",
+                sm: "250px",
+                md: "300px",
+                lr: "400px",
+                xl: "500px",
+              },
+              input: {
+                color: "#2c343f",
+              },
+            }}
+            name="lastName"
+            label="Last Name"
+            color="primary"
+            focused
+            placeholder="Smith"
+            onChange={onChangeHandler}
+            value={sendedMessage.lastName}
+          />
+          <TextField
+            sx={{
+              width: {
+                xs: "300px",
+                sm: "250px",
+                md: "300px",
+                lr: "400px",
+                xl: "500px",
+              },
+              input: {
+                color: "#2c343f",
+              },
+            }}
+            name="email"
+            label="Email"
+            type="email"
+            color="primary"
+            focused
+            required
+            placeholder="john123@gmail.com"
+            onChange={onChangeHandler}
+            value={sendedMessage.email}
+          />
+          <TextField
+            sx={{
+              width: {
+                xs: "300px",
+                sm: "250px",
+                md: "300px",
+                lr: "400px",
+                xl: "500px",
+                input: {
+                  color: "#2c343f",
+                },
+              },
+            }}
+            name="message"
+            fullWidth
+            label="Type your Message"
+            placeholder="I have a guestion, example: ..."
+            color="primary"
+            focused
+            onChange={onChangeHandler}
+            value={sendedMessage.message}
+          />
           <Button
-            variant="contained"
-            style={{
-              width: 210,
-              height: 50,
+            type="submit"
+            sx={{
+              marginBottom: "25px",
+              fontSize: "1rem",
+              width: {
+                xs: "300px",
+                sm: "250px",
+                md: "300px",
+                lr: "400px",
+                xl: "500px",
+              },
               backgroundColor: "#FD8585",
-              marginTop: 100,
               color: "#2c343f",
             }}
-            className="contact__btn"
-            type="submit"
+            variant="contained"
           >
             Send
           </Button>
