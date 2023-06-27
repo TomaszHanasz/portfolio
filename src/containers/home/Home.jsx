@@ -8,7 +8,6 @@ import CssIcon from "@mui/icons-material/Css";
 import JavascriptIcon from "@mui/icons-material/Javascript";
 import { Link } from "react-router-dom";
 import "./home.style.css";
-import { Css } from "@mui/icons-material";
 
 const Home = () => {
   return (
