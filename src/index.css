@@ -50,7 +50,7 @@ Button:hover {
 }
 
 @media screen and (max-width: 750px) {
-  body {
+  /* body {
     line-height: 2rem;
   }
 
@@ -60,5 +60,5 @@ Button:hover {
 
   p {
     font-size: 1rem;
-  }
+  } */
 }
