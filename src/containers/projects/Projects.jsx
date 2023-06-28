@@ -10,6 +10,7 @@ import DeliveryForm from "../../images/deliveryform.jpg";
 import Todo from "../../images/todo.jpg";
 import CarDealer from "../../images/cardealer.jpg";
 import Daycare from "../../images/daycare.png";
+import Accounting from "../../images/accounting.jpg";
 import "./projects.style.css";
 
 const Projects = () => {
@@ -31,6 +32,24 @@ const Projects = () => {
               <h4>Weather Application</h4>
               <Typography variant="body2" color="text.secondary">
                 App use Axios to fetch data from OpenWeather database.
+              </Typography>
+            </CardContent>
+          </Card>
+        </a>
+        <a
+          href="https://www.figma.com/proto/KkXLIuQzlssyZovkuGJLTn/Untitled?page-id=0%3A1&type=design&node-id=1-2&viewport=715%2C260%2C0.18&scaling=min-zoom&mode=design"
+          className="projects__card"
+        >
+          <Card sx={{ maxWidth: 345, maxHeight: 360 }}>
+            <CardMedia
+              sx={{ height: 240 }}
+              image={Accounting}
+              title="car dealership"
+            />
+            <CardContent sx={{ minHeight: 150, height: 150 }}>
+              <h4>Taxes & Accounting</h4>
+              <Typography variant="body2" color="text.secondary">
+                Figma project of accounting office website.
               </Typography>
             </CardContent>
           </Card>
@@ -106,7 +125,7 @@ const Projects = () => {
             <CardContent sx={{ minHeight: 150, height: 150 }}>
               <h4>Car Dealership</h4>
               <Typography variant="body2" color="text.secondary">
-                Figma project of car dealership website.
+                Figma project of car dealership mobile website.
               </Typography>
             </CardContent>
           </Card>
