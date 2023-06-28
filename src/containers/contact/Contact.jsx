@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import NavBar from "../../components/navBar/NavBar";
 import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import EmailIcon from "@mui/icons-material/Email";
 import "./contact.style.css";
 
 const Contact = () => {
@@ -127,6 +129,17 @@ const Contact = () => {
             Send
           </Button>
         </form>
+      </div>
+      <div className="contact__footer">
+        <div className="contact__details">
+          <LocalPhoneIcon sx={{ width: 35, height: 35 }} />
+          <p>224-226-5809</p>
+        </div>
+        <div className="contact__details">
+          <EmailIcon sx={{ width: 40, height: 40 }} />
+          <p>tomaszhanasz@yahoo.pl</p>
+        </div>
+        <p>©2023 Tomasz Hanasz</p>
       </div>
     </div>
   );

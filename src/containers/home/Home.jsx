@@ -6,13 +6,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import HtmlIcon from "@mui/icons-material/Html";
 import CssIcon from "@mui/icons-material/Css";
 import JavascriptIcon from "@mui/icons-material/Javascript";
+import me from "../../images/image-61.png";
 import { Link } from "react-router-dom";
 import "./home.style.css";
 
 const Home = () => {
   return (
     <div className="home">
-      <div className="home__right"></div>
       <NavBar />
       <div className="home__page">
         <div className="home__container">
@@ -68,6 +68,13 @@ const Home = () => {
               <HtmlIcon sx={{ width: 50, height: 50 }} />
               <CssIcon sx={{ width: 50, height: 50 }} />
               <JavascriptIcon sx={{ width: 50, height: 50 }} />
+            </div>
+          </div>
+        </div>
+        <div className="home__right">
+          <div className="photo__bgtwo">
+            <div className="photo__bg">
+              <img src={me} className="home__photo" alt="author" />
             </div>
           </div>
         </div>
