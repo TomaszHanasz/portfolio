@@ -1,1 +1,1 @@
-https://tomaszhanasz.netlify.app/
+http://tomaszhanasz.com/
