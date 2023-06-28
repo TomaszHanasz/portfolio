@@ -13,11 +13,20 @@
 
 @media screen and (max-width: 1300px) {
   .projects__container {
-    width: 80%;
+    width: 90%;
+    gap: 10px;
+    margin: 40px auto;
+    justify-items: center;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
+  .projects__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 750px) {
   .projects__container {
     grid-template-columns: 1fr;
     width: 90%;

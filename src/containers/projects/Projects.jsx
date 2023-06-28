@@ -22,7 +22,7 @@ const Projects = () => {
           href="https://new-weather-app-tomek.netlify.app/"
           className="projects__card"
         >
-          <Card sx={{ maxWidth: 345, maxHeight: 360 }}>
+          <Card sx={{ maxWidth: 300, minWidth: 300, maxHeight: 360 }}>
             <CardMedia
               sx={{ height: 240 }}
               image={WeatherApp}
@@ -40,7 +40,7 @@ const Projects = () => {
           href="https://www.figma.com/proto/KkXLIuQzlssyZovkuGJLTn/Untitled?page-id=0%3A1&type=design&node-id=1-2&viewport=715%2C260%2C0.18&scaling=min-zoom&mode=design"
           className="projects__card"
         >
-          <Card sx={{ maxWidth: 345, maxHeight: 360 }}>
+          <Card sx={{ maxWidth: 300, minWidth: 300, maxHeight: 360 }}>
             <CardMedia
               sx={{ height: 240 }}
               image={Accounting}
@@ -55,7 +55,7 @@ const Projects = () => {
           </Card>
         </a>
         <a href="https://moviestomek.netlify.app/" className="projects__card">
-          <Card sx={{ maxWidth: 345, maxHeight: 360 }}>
+          <Card sx={{ maxWidth: 300, minWidth: 300, maxHeight: 360 }}>
             <CardMedia
               sx={{ height: 240 }}
               image={MoviesDom}
@@ -73,7 +73,7 @@ const Projects = () => {
           href="https://mui-todo-tomek.netlify.app/"
           className="projects__card"
         >
-          <Card sx={{ maxWidth: 345, maxHeight: 360 }}>
+          <Card sx={{ maxWidth: 300, minWidth: 300, maxHeight: 360 }}>
             <CardMedia
               sx={{ height: 240, minHeight: 240 }}
               image={Todo}
@@ -91,7 +91,7 @@ const Projects = () => {
           href="https://deliveryformtomek.netlify.app/"
           className="projects__card"
         >
-          <Card sx={{ maxWidth: 345, maxHeight: 360 }}>
+          <Card sx={{ maxWidth: 300, minWidth: 300, maxHeight: 360 }}>
             <CardMedia sx={{ height: 240 }} image={DeliveryForm} title="form" />
             <CardContent sx={{ minHeight: 150, height: 150 }}>
               <h4>Delivery Form</h4>
@@ -102,7 +102,7 @@ const Projects = () => {
           </Card>
         </a>
         <a href="/projects" className="projects__card">
-          <Card sx={{ maxWidth: 345, maxHeight: 360 }}>
+          <Card sx={{ maxWidth: 300, minWidth: 300, maxHeight: 360 }}>
             <CardMedia sx={{ height: 240 }} image={Daycare} title="daycare" />
             <CardContent sx={{ minHeight: 150, height: 150 }}>
               <h4>Helen Lucy Daycare</h4>
@@ -116,7 +116,7 @@ const Projects = () => {
           href="https://www.figma.com/proto/TL4ZW14DDKjvK8ozSb7A4s/DEALERSHIP?embed_host=share&kind=&node-id=5-20557&page-id=0%3A1&scaling=scale-down&starting-point-node-id=5%3A20557&type=design&viewport=543%2C361%2C0.33"
           className="projects__card"
         >
-          <Card sx={{ maxWidth: 345, maxHeight: 360 }}>
+          <Card sx={{ maxWidth: 300, minWidth: 300, maxHeight: 360 }}>
             <CardMedia
               sx={{ height: 240 }}
               image={CarDealer}
