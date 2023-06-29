@@ -11,6 +11,7 @@ import Todo from "../../images/todo.jpg";
 import CarDealer from "../../images/cardealer.jpg";
 import Daycare from "../../images/daycare.png";
 import Accounting from "../../images/accounting.jpg";
+import MoviesData from "../../images/moviesdata.png";
 import "./projects.style.css";
 
 const Projects = () => {
@@ -18,6 +19,24 @@ const Projects = () => {
     <div>
       <NavBar />
       <div className="projects__container">
+        <a
+          href="https://movies-database-tomek.netlify.app/"
+          className="projects__card"
+        >
+          <Card sx={{ maxWidth: 300, minWidth: 300, maxHeight: 360 }}>
+            <CardMedia
+              sx={{ height: 240 }}
+              image={MoviesData}
+              title="movies database"
+            />
+            <CardContent sx={{ minHeight: 150, height: 150 }}>
+              <h4>Movies Database</h4>
+              <Typography variant="body2" color="text.secondary">
+                App with search function from OpenImdb database.
+              </Typography>
+            </CardContent>
+          </Card>
+        </a>
         <a
           href="https://new-weather-app-tomek.netlify.app/"
           className="projects__card"
