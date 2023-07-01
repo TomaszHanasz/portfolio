@@ -34,6 +34,7 @@ const Home = () => {
                     height: 64,
                     backgroundColor: "#FD8585",
                     color: "#2c343f",
+                    textDecoration: "none"
                   }}
                 >
                   Contact
@@ -47,6 +48,7 @@ const Home = () => {
                     height: 64,
                     backgroundColor: "#FD8585",
                     color: "#2c343f",
+                    textDecoration: "none"
                   }}
                 >
                   My Projects
