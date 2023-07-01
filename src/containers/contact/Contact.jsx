@@ -99,6 +99,7 @@ const Contact = () => {
               height: 64,
               backgroundColor: "#FD8585",
               color: "#2c343f",
+              textDecoration: "none",
               "&:hover": {
                 backgroundColor: "2c343f",
                 color: "#FD8585",
