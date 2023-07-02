@@ -62,26 +62,6 @@ const Contact = () => {
                 color: "#2c343f",
               },
             }}
-            name="lastName"
-            label="Last Name"
-            color="primary"
-            focused
-            onChange={onChangeHandler}
-            value={sendedMessage.lastName}
-          />
-          <TextField
-            sx={{
-              width: {
-                xs: "300px",
-                sm: "250px",
-                md: "300px",
-                lr: "400px",
-                xl: "500px",
-              },
-              input: {
-                color: "#2c343f",
-              },
-            }}
             name="email"
             label="Email"
             type="email"
@@ -119,6 +99,7 @@ const Contact = () => {
               height: 64,
               backgroundColor: "#FD8585",
               color: "#2c343f",
+              textDecoration: "none",
               "&:hover": {
                 backgroundColor: "2c343f",
                 color: "#FD8585",
