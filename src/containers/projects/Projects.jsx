@@ -38,6 +38,38 @@ const Projects = () => {
           </Card>
         </a>
         <a
+          href="https://www.figma.com/proto/TL4ZW14DDKjvK8ozSb7A4s/DEALERSHIP?embed_host=share&kind=&node-id=5-20557&page-id=0%3A1&scaling=scale-down&starting-point-node-id=5%3A20557&type=design&viewport=543%2C361%2C0.33"
+          className="projects__card"
+        >
+          <Card sx={{ maxWidth: 300, minWidth: 300, maxHeight: 360 }}>
+            <CardMedia
+              sx={{ height: 240 }}
+              image={CarDealer}
+              title="car dealership"
+            />
+            <CardContent sx={{ minHeight: 150, height: 150 }}>
+              <h4>Car Dealership</h4>
+              <Typography variant="body2" color="text.secondary">
+                Figma project of car dealership mobile website.
+              </Typography>
+            </CardContent>
+          </Card>
+        </a>
+        <a
+          href="https://helenlucydaycare.netlify.app/"
+          className="projects__card"
+        >
+          <Card sx={{ maxWidth: 300, minWidth: 300, maxHeight: 360 }}>
+            <CardMedia sx={{ height: 240 }} image={Daycare} title="daycare" />
+            <CardContent sx={{ minHeight: 150, height: 150 }}>
+              <h4>Helen Lucy Daycare</h4>
+              <Typography variant="body2" color="text.secondary">
+                Website for a daycare located in Chicago.
+              </Typography>
+            </CardContent>
+          </Card>
+        </a>
+        <a
           href="https://new-weather-app-tomek.netlify.app/"
           className="projects__card"
         >
@@ -116,35 +148,6 @@ const Projects = () => {
               <h4>Delivery Form</h4>
               <Typography variant="body2" color="text.secondary">
                 App stores user input in an object. Fancy signature included.
-              </Typography>
-            </CardContent>
-          </Card>
-        </a>
-        <a href="/projects" className="projects__card">
-          <Card sx={{ maxWidth: 300, minWidth: 300, maxHeight: 360 }}>
-            <CardMedia sx={{ height: 240 }} image={Daycare} title="daycare" />
-            <CardContent sx={{ minHeight: 150, height: 150 }}>
-              <h4>Helen Lucy Daycare</h4>
-              <Typography variant="body2" color="text.secondary">
-                Website for a daycare located in Chicago.
-              </Typography>
-            </CardContent>
-          </Card>
-        </a>
-        <a
-          href="https://www.figma.com/proto/TL4ZW14DDKjvK8ozSb7A4s/DEALERSHIP?embed_host=share&kind=&node-id=5-20557&page-id=0%3A1&scaling=scale-down&starting-point-node-id=5%3A20557&type=design&viewport=543%2C361%2C0.33"
-          className="projects__card"
-        >
-          <Card sx={{ maxWidth: 300, minWidth: 300, maxHeight: 360 }}>
-            <CardMedia
-              sx={{ height: 240 }}
-              image={CarDealer}
-              title="car dealership"
-            />
-            <CardContent sx={{ minHeight: 150, height: 150 }}>
-              <h4>Car Dealership</h4>
-              <Typography variant="body2" color="text.secondary">
-                Figma project of car dealership mobile website.
               </Typography>
             </CardContent>
           </Card>
