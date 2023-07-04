@@ -34,7 +34,7 @@ const Home = () => {
                     height: 64,
                     backgroundColor: "#FD8585",
                     color: "#2c343f",
-                    textDecoration: "none"
+                    textDecoration: "none",
                   }}
                 >
                   Contact
@@ -48,7 +48,7 @@ const Home = () => {
                     height: 64,
                     backgroundColor: "#FD8585",
                     color: "#2c343f",
-                    textDecoration: "none"
+                    textDecoration: "none",
                   }}
                 >
                   My Projects
@@ -72,6 +72,9 @@ const Home = () => {
               <JavascriptIcon sx={{ width: 50, height: 50 }} />
             </div>
           </div>
+          <p style={{ fontSize: "0.7rem" }}>
+            ©Copyrights Tomasz Hanasz {new Date().getFullYear()}
+          </p>
         </div>
         <div className="home__right">
           <div className="photo__bgtwo">

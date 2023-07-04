@@ -37,6 +37,7 @@ const AboutMe = () => {
           members to continuously improve my <span>work</span>.
         </p>
       </div>
+   
     </div>
   );
 };
